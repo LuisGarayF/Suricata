@@ -1,0 +1,43 @@
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+h1 {
+    text-align: center;
+    font-size: 60px;
+    color: #707070;
+    font-weight: 700;
+}
+
+h2 {
+    font-size: 40px;
+    font-weight: 700;
+}
+
+.fondo {
+    background-color: #E83E8C;
+}
+
+header ul li a {
+    color: #fff;
+}
+
+.tarjetas {
+    height: 170px;
+    align-items: center;
+    background-color: #17A2B8;
+}
+
+.tarjetas_texto {
+    width: 25rem;
+}
+
+.iconos {
+ font-size: 53px;
+}
+
+
+footer {
+    background-color:#E83E8C;
+}
+
