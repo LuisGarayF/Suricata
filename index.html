@@ -5,187 +5,430 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Suricata</title>
         <meta name="description" content="Desafio Suricata">
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="author" content="Luis Garay">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/brands.css" integrity="sha384-GjGxypaJovIS9KvmJ0F1G5aXPEfMvk9dMgnwAAw7UOfX7zTQZMapUiXX/+8HlctD" crossorigin="anonymous">
         <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.1.1/css/fontawesome.css" integrity="sha384-zIaWifL2YFF1qaDiAo0JFgsmasocJ/rqu7LKYH8CoBEXqGbb9eO+Xi3s6fQhgFWM" crossorigin="anonymous">
+          <!-- Google Fonts -->
         <link rel="preconnect" href="https://fonts.googleapis.com">
         <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0"/>
+        <link href="https://fonts.googleapis.com/css?family=Poppins:300,300i,400,400i,600,600i,700,700i|Satisfy|Comic+Neue:300,300i,400,400i,700,700i" rel="stylesheet">
+        <!---Hoja de estilos-->
         <link rel="stylesheet" href="./assets/css/style.css">
+        <!-- Font Awesome-->
+        <script src="https://use.fontawesome.com/770a1b553c.js"></script>
+        <!--Favicon-->
+        <link rel="apple-touch-icon" sizes="180x180" href="./assets/img/favicon_suricata/apple-touch-icon.png">
+        <link rel="icon" type="image/png" sizes="32x32" href="./assets/img/favicon_suricata/favicon-32x32.png">
+        <link rel="icon" type="image/png" sizes="16x16" href="./assets/img/favicon_suricata/favicon-16x16.png">
+        <link rel="manifest" href="./assets/img/favicon_suricata/site.webmanifest">
     </head>
     <body>
-
-        <!--Creamos el header-->
-
-        <header class=" align-items-center">
-                <nav class="navbar navbar-expand-lg navbar-dark fondo">
-                    <div class="container">
-                      <a class="navbar-brand" href="#">
-                        <img src="./assets/img/logo.png" alt="logotipo-suricata" height="53">
-                      </a>
-                      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                      </button>
-                      <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav ml-auto ms-auto ms-xl-auto ms-sm-auto">
-                          <li class="nav-item">
-                            <a class="nav-link active" aria-current="page" href="#">Inicio</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#productos">Productos</a>
-                          </li>
-                          <li class="nav-item">
-                            <a class="nav-link" href="#">Contacto</a>
-                          </li>
-                        </ul>
-                      </div>
-                    </div>
-                  </nav>
+        <!--Header-->
+        <header class="container-fluid align-items-center px-0 ">
+            <nav class="navbar navbar-expand-lg navbar-dark fondo navbar order-last order-lg-0">
+                <div class="container">
+                  <a class="navbar-brand" href="index.html">
+                    <img src="./assets/img/logo/logo-suricata.svg" alt="logotipo-suricata" class="d-inline-block align-text-top mx-4 col-4 logo img-responsive">
+                </a>
+                  <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                  </button>
+                  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav ml-auto ms-auto ms-xl-auto ms-sm-auto">
+                      <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="index.html">Inicio</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link scrollto" href="#carta">Carta</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link scrollto" href="#galeria">Galería</a>
+                      </li>
+                      <li class="nav-item">
+                        <a class="nav-link" data-bs-toggle="modal" data-bs-target="#modal_contacto">Contacto</a>
+                      </li>
+                    </ul>
+                  </div>
+                </div>
+            </nav>
         </header>
-
-        <!--Creamos un contenedor principal-->
-
-                <main class="container-fluid ml-auto ms-auto ms-xl-auto ms-sm-auto">
-                    <section id="productos" class="pb-5 mb-5">
-                        <div class="py-5 px-3 text-center" id="titulo">
-                            <h1 class="ml-auto ms-auto ms-xl-auto ms-sm-auto">Nuestros Productos</h1>
+        <!--Main-->
+        <main class="container-fluid px-0">
+            <!-- Sección de Título-->
+            <div class="row">
+                <div id="carta" class="pb-1 mb-1">
+                    <div class="col titulo text-start">
+                        <img src="/assets/img/header/header_comida.jpg" class="img-fluid p-0 w-100" alt="header_carta">
+                        <div class="py-md-5 px-3 text-start" id="titulo"></div>
+                            <h1 class="ml-auto ms-auto ms-xl-auto ms-sm-auto text-title text-center"> Nuestra Carta </h1>
                         </div>
-
-                        <!-- Acá comienzan las columnas y filas de productos -->
-
-                        <section  class="d-flex ">
-                            <div class="container-fluid">
-                                <div class="row justify-content-center">
-
-                                    <!-- Dejamos agrupado de a 3 items por fila-->
-
-                                    <div class="card mx-5 my-3 col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/colaciones.jpg" alt="imagen_colaciones">
-                                        <div class="card-body">
-                                        <h5 class="card-title"><strong>Colaciones</strong></h5>
-                                        <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                        <ul class="list-group list-group-flush">
-                                        <li class="list-group-item">Cras justo odio</li>
-                                        <li class="list-group-item">Dapibus ac facilisis in</li>
-                                        </ul>
-                                        <div class="card-body">
-                                        <a href="#" class="card-link">Ver más</a>
-                                        <a href="#" class="card-link">Comprar</a>
-                                        </div>
-                                    </div>
-                                    <div class="card mx-5  my-3  col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/desayunos.jpg" alt="imagen_desayunos">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><strong>Desayunos</strong></h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Cras justo odio</li>
-                                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                            </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Ver más</a>
-                                            <a href="#" class="card-link">Comprar</a>
-                                        </div>  
-                                    </div>
-                                    <div class="card mx-5 my-3  col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/bebidas.jpg" alt="imagen_bebidas">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><strong>Bebidas</strong></h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
-                                        </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Cras justo odio</li>
-                                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                            </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Ver más</a>
-                                            <a href="#" class="card-link">Comprar</a>
-                                        </div>
-                                    </div>  
+                    </div>
+                </div>
+            </div>
+            <!-- Carta -->
+            <div class="container">
+                <div class="row d-flex mx-auto justify-content-center">
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Desayunos</strong></h5>
+                        <img class="img-fluid px-0 mx-0 img-card" src="./assets/img/card_img/desayunos.jpg" alt="imagen_desayunos" style="width:100%">    
+                        <div class="card-body">
+                            <h3 class="card-text">Nuestros desayunos incluyen :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Fruta cortada en cuadritos</li>
+                            <li class="list-group-item">Yogurt o Leche</li>
+                            <li class="list-group-item">Cereal</li>
+                            <li class="list-group-item">Jugo natural</li>
+                            <li class="list-group-item">Pan de miga o integral</li>
+                            <li class="list-group-item">Café o Té</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $3.000</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2 ">Ver desayunos</a></span>
+                            </div>
+                        </div>  
+                    </div>
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Colaciones</strong></h5>
+                        <img class="img-fluid px-0 mx-0" src="./assets/img/card_img/colaciones.jpg" alt="imagen_colaciones">
+                        <div class="card-body">
+                        <h3 class="card-text">Nuestras colaciones incluyen :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Entrada</li>
+                            <li class="list-group-item">Plato Principal</li>
+                            <li class="list-group-item">Bebestible</li>
+                            <li class="list-group-item">Ensalada</li>
+                            <li class="list-group-item">Postre</li>
+                            <li class="list-group-item">Café o Té de hierbas</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $3.500</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2">Ver Menú del día</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Bebidas y tragos</strong></h5>
+                        <img class="img-fluid px-0 mx-0" src="./assets/img/card_img/bebidas.jpg" alt="imagen_bebidas">
+                        <div class="card-body">
+                            <h3 class="card-text">Nuestras bebidas y tragos :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Bebidas gaseosas</li>
+                            <li class="list-group-item">Jugos naturales de fruta</li>
+                            <li class="list-group-item">Destilados</li>
+                            <li class="list-group-item">Especialidades</li>
+                            <li class="list-group-item">Tragos con base de crema</li>
+                            <li class="list-group-item">Vinos y espumantes</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $3.500</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2">Ver Tragos y Bebidas</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Especialidades</strong></h5>
+                        <img class="img-fluid px-0 mx-0" src="./assets/img/card_img/especialidades.jpg" alt="imagen_especialidades">
+                        <div class="card-body">
+                            <h3 class="card-text">Nuestras especialidades :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Pizza a la piedra</li>
+                            <li class="list-group-item">Empanadas</li>
+                            <li class="list-group-item">Mojitos de sabores</li>
+                            <li class="list-group-item">Quesadillas</li>
+                            <li class="list-group-item">Lomo a lo pobre</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $9.500</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2">Ver Especialidades</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Dulces y postres</strong></h5>
+                        <img class="img-fluid px-0 mx-0" src="./assets/img/card_img/postres.jpg" alt="imagen_postres">
+                        <div class="card-body">
+                            <h3 class="card-text">Nuestras dulces y postres :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Trozos de torta</li>
+                            <li class="list-group-item">Suspiro limeño</li>
+                            <li class="list-group-item">Flanes de sabores</li>
+                            <li class="list-group-item">Bombones artesanales</li>
+                            <li class="list-group-item">Cheesecacke variedades</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $5.500</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2">Ver dulces y postres</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mx-5 my-3 col-3">
+                        <h5 class="card-title text-center py-2 display-6 px-0"><strong>Once</strong></h5>
+                        <img class="img-fluid px-0 mx-0" src="./assets/img/card_img/onces.jpg" alt="imagen_onces">
+                        <div class="card-body">
+                            <h3 class="card-text">Nuestras onces incluyen :</h3>
+                        </div>
+                        <ul class="list-group list-group-flush">
+                            <li class="list-group-item">Trozo de torta o pastel</li>
+                            <li class="list-group-item">Pan de miga o integral</li>
+                            <li class="list-group-item">Mermelada o dulce de membrillo</li>
+                            <li class="list-group-item">Jamón y queso</li>
+                            <li class="list-group-item">Café o Té</li>
+                        </ul>
+                        <div class="card-body text-center">
+                            <div class="row">
+                                <span class="col-12"><a href="#" class="card-link">Valores desde: $9.500</a></span>
+                                <span class="col-12"><a href="#" class="card-link text-center btn boton-card my-2">Ver especialidades</a></span>
+                            </div>
+                        </div>
+                    </div>
+                    <hr class="mt-5 w-100">       
+                </div>
+            </div>
+            <!--Slider-->
+            <div class="container-fluid px-0">
+                <div class="row py-sm-5">
+                    <div class="col carrusel">
+                        <div id="galeria" class="pb-1 mb-1">
+                            <div class="col titulo text-start">
+                                <img src="/assets/img/header/header_galeria.jpg" class="img-fluid p-0 w-100" alt="header_galeria">
+                                <div class="py-lg-5 px-3 text-start" id="titulo"></div>
+                                    <h1 class="ml-auto ms-auto ms-xl-auto ms-sm-auto text-title-gal text-center"> Galería </h1>
                                 </div>
-
-                                    <!-- Creamos la siguiente fila-->
-
-                                <div class="row justify-content-center">
-                                    <div class="card mx-5 my-3 col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/verduras.jpg" alt="imagen_verduras">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><strong>Verduras</strong></h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                            </div>
+                        </div>
+                        <div class="container">
+                            <div class="row py-lg-3 px-md-5 m-md-2">
+                                <div class="col">
+                                    <div id="carouselExampleControls" class="carousel slide w-50 mx-auto" data-bs-ride="carousel">
+                                        <div class="carousel-inner">
+                                            <div class="carousel-item active">
+                                                <img src="./assets/img/gallery/gallery-1.jpg" class="d-block w-100" alt="slide-1">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-2.jpg" class="d-block w-100" alt="slide-2">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-3.jpg" class="d-block w-100" alt="slide-3">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-4.jpg" class="d-block w-100" alt="slide-4">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-5.jpg" class="d-block w-100" alt="slide-5">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-6.jpg" class="d-block w-100" alt="slide-6">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-7.jpg" class="d-block w-100" alt="slide-7">
+                                            </div>
+                                            <div class="carousel-item">
+                                                <img src="./assets/img/gallery/gallery-8.jpg" class="d-block w-100" alt="slide-8">
+                                            </div>
                                         </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Cras justo odio</li>
-                                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                            </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Ver más</a>
-                                            <a href="#" class="card-link">Comprar</a>
+                                        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                                            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Anterior</span>
+                                        </button>
+                                        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                                            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                                            <span class="visually-hidden">Siguiente</span>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--Sección de tarjetas de crédito-->
+            <section class="container-fluid icons-section d-none d-sm-none d-md-block py-sm-4 mt-sm-5 tarjetas">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-5 text-white text-right">
+                            <h2 class="font-weight-bold mt-3">Ahora aceptamos</h2>
+                        </div>
+                        <div class="col-6 py-4 text-white d-flex">
+                            <i class="fab fa-cc-mastercard fa-4x px-2"></i>
+                            <i class="fab fa-cc-visa fa-4x px-2"></i>
+                            <i class="fab fa-cc-amex fa-4x px-2"></i>
+                            <i class="fab fa-cc-diners-club fa-4x px-2"></i>
+                            <i class="fab fa-cc-paypal fa-4x px-2"></i>
+                            <i class="fab fa-cc-discover fa-4x px-2"></i>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <!-- Modal -->
+        <div class="modal fade" id="modal_contacto" tabindex="-1" aria-labelledby="ModalLabel" aria-hidden="true">
+            <div class="modal-dialog">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title titulo px-3" id="modal_servicio">Formulario de Contacto</h2>
+                        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                    </div>
+                    <div class="modal-body">
+                        <form action="#">
+                            <div class="mb-3 mt-3">
+                                <h2 class="titulo-modal py-md-2 px-md-3"> Datos Personales</h2>
+                                <div class="container form-group">
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input id="nombre" name="nombre" type="text" placeholder="Nombre" class="form-control my-2" required>
+                                        </div>
+                                        <div class="col-md-6">
+                                            <input id="apellido" name="apellido" type="text" placeholder="Apellido" class="form-control my-2" required>
                                         </div>
                                     </div>
-                                    <div class="card mx-5  my-3 col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/dulces.jpg" alt="imagen_dulces">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><strong>Dulces</strong></h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="row">
+                                        <div class="col-md-6">
+                                            <input id="rut" name="rut" type="text" placeholder="Rut" class="form-control my-2" required>
                                         </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Cras justo odio</li>
-                                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                            </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Ver más</a>
-                                            <a href="#" class="card-link">Comprar</a>
+                                        <div class="col-md-6">
+                                            <input id="telefono" name="telefono" type="text" placeholder="Teléfono" class="form-control my-2" required>
                                         </div>
                                     </div>
-                                    <div class="card mx-5 my-3 col-4" style="width: 17rem;">
-                                        <img class="card-img-top" src="./assets/img/empanadas.jpg" alt="imagen_empanadas">
-                                        <div class="card-body">
-                                            <h5 class="card-title"><strong>Empanadas</strong></h5>
-                                            <p class="card-text">Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="email" class="form-control my-2" id="email" placeholder="Correo electrónico" name="email" required>
                                         </div>
-                                            <ul class="list-group list-group-flush">
-                                                <li class="list-group-item">Cras justo odio</li>
-                                                <li class="list-group-item">Dapibus ac facilisis in</li>
-                                            </ul>
-                                        <div class="card-body">
-                                            <a href="#" class="card-link">Ver más</a>
-                                            <a href="#" class="card-link">Comprar</a>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <input type="address" class="form-control my-2" id="adress" placeholder="Dirección" name="address" required>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h2 class="titulo-modal py-3 px-3"> Seleccione como quiere recibir su pedido : </h2>
+                                <div class="container form-group">
+                                    <div class="row">
+                                        <div class="col-md-12  text-center">
+                                            <div class="btn-group" role="group">
+                                                <input type="radio" class="btn-check" name="options-outlined" id="success-outlined" autocomplete="off" checked>
+                                                <label class="btn btn-outline-success" for="success-outlined">Retiro en local</label>
+                                                <input type="radio" class="btn-check" name="options-outlined" id="danger-outlined" autocomplete="off">
+                                                <label class="btn btn-outline-success" for="danger-outlined">Despacho a domicilio</label>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="my-3">
+                                                <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" placeholder="Observaciones"></textarea>
+                                            </div>
+                                        </div>
+                                        <div class="col-md-12">
+                                            <div class="my-3">
+                                            <button type="submit" class="btn boton-modal">ENVIAR</button>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
                             </div>
-                        </section>
-                    </section>
-            
-                <!--Sección de tarjetas de crédito-->
-
-                <section class="container-fluid icons-section d-none d-sm-none d-md-block py-5 mt-5 tarjetas">
-                    <div class="container">
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Footer -->
+        <div class="footer pt-lg-5 px-xs-0 px-sm-0">
+            <div class="footer-top text-white pt-3 px-4" id="footer">
+                <div class="container">
                     <div class="row">
-                        <div class="col-5 text-white text-right">
-                        <h2 class="font-weight-bold mt-3">Ahora aceptamos</h2>
+                        <div class="col-lg-4 col-md-12">
+                            <div class="widget-item">
+                                <div class="footer-logo pb-4">
+                                    <a href="index.html">
+                                        <img src="./assets/img/logo/logo-suricata.svg" alt="Logo" class="logo-footer">
+                                    </a>
+                                </div>
+                                <div class="p-lg-0 mr-lg-0 py-lg-3 text-right d-inline-block mb-sm-2">
+                                    <div class="mr-md-auto">
+                                        <a href="#" class="p-md-2 pl-md-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-facebook-f"></i></a>
+                                        <a href="#" class="p-md-2 pl-md-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-instagram"></i></a>
+                                        <a href="#" class="p-md-2 pl-md-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-whatsapp"></i></a>
+                                        <a href="#" class="p-md-2 pl-md-0" target="_blank" rel="noopener noreferrer"><i class="fa-brands fa-twitter"></i></a>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                        <div class="col-6 py-4 text-white">
-                        <i class="fab fa-cc-mastercard fa-4x"></i>
-                        <i class="fab fa-cc-visa fa-4x ml-1"></i>
-                        <i class="fab fa-cc-amex fa-4x ml-1"></i>
-                        <i class="fab fa-cc-diners-club fa-4x ml-1"></i>
-                        <i class="fab fa-cc-paypal fa-4x ml-1"></i>
-                        <i class="fab fa-cc-discover fa-4x ml-1"></i>
+                        <div class="col-lg-4 col-md-6 col-sm-12 pt-sm-8 pt-lg-2 pt-md-2">
+                            <div class="widget-item">
+                                <h3 class="widget-title my-2 fw-bold fs-5">Menú</h3>
+                                <ul class="widget-list-item list-unstyled">
+                                    <li class="py-1">
+                                        <a href="index.html" class="ft-link">Inicio</a>
+                                    </li>
+                                    <li  class="py-1">
+                                        <a href="#carta" class="ft-link">Carta</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a href="#galeria" class="ft-link">Galería</a>
+                                    </li>
+                                    <li class="py-1">
+                                        <a data-bs-toggle="modal" data-bs-target="#modal_contacto" class="ft-link">Contacto</a>
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="col-lg-4 col-md-6 col-sm-12 pt-lg-2 pt-md-2">
+                            <div class="widget-item">
+                                <h3 class="widget-title my-2 fw-bold fs-5 ">Información de contacto</h3>
+                                <ul class="widget-list-item list-unstyled">
+                                    <li class="py-1">
+                                        <a href="#" class="ft-link d-flex" target="_blank" rel="noopener noreferrer">
+                                            <span><span class="material-symbols-outlined icon">location_on</span></span>
+                                            <span class="d-md-inline-block p-1"> Av. Radal #238, Renca, Santiago. </span>
+                                        </a>
+                                    </li>
+                                    <li  class="py-1">
+                                        <a href="mailto:contacto@prueba123-456.cl" class="ft-link d-flex" target="_blank" rel="noopener noreferrer">
+                                            <span><span class="material-symbols-outlined icon">mail</span></span>
+                                            <span class="d-md-inline-block p-1"> contacto@suricata.cl </span>
+                                        </a>
+                                    </li>
+                                    <li  class="py-1">
+                                        <a href="tel:+56912345678" class="ft-link d-flex" target="_blank" rel="noopener noreferrer">
+                                            <span><span class="material-symbols-outlined icon">phone_in_talk</span></span>
+                                            <span class="d-md-inline-block p-1"> +56 9 1234 5678 </span>
+                                        </a>
+                                    </li>
+                                    <li  class="py-1">
+                                        <span href="#" class="ft-link-nn d-flex">
+                                            <span><span class="material-symbols-outlined icon">schedule</span></span>
+                                            <span class="d-md-inline-block p-1"> Lunes a Sábado de 09:00 a 20.00 hrs. </span>
+                                        </span>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
                     </div>
+                </div>
+            </div>
+            <div class="footer-bottom py-3 text-center texto-footer" id="footer-bottom">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-lg-12">
+                            <div class="copyright">
+                                <span class="copyright-text text-white"> Desarrollado por Luis Garay • Edutecno - Talento Digital. © 2022 </span>
+                            </div>
+                        </div>
                     </div>
-                </section>
-
-                <!--Footer-->  
-                
-                <footer class="footer text-center py-5">
-                    <img src="./assets/img/logo-footer.png" width="53" height="100" alt="logo_footer_suricata">
-                </footer>
-            </main>
-        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+                </div>
+            </div>
+        </div>
     </body>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
 </html>

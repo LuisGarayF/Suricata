@@ -1,48 +1,527 @@
-body{
-    font-family: 'Open Sans', sans-serif;
+/*--------------------------------------------------------------
+# General
+--------------------------------------------------------------*/
+body {
+    font-family: "Poppins", sans-serif;
+    color: #444444;
+}
+  
+a {
+    text-decoration: none;
+    color: #ffb03b;
+}
+  
+a:hover {
+    color: #ffc56e;
+    text-decoration: none;
+}
+  
+h1,h2,h3,h4,h5,h6 {
+    font-family: "Satisfy", sans-serif;
 }
 
-h1 {
-    text-align: center;
-    font-size: 60px;
-    color: #707070;
-    font-weight: 700;
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+    background-color: #ea4c35;
+    color: #fff;
+    border-color: transparent;
+    text-shadow: none;
 }
 
-h2 {
-    font-size: 40px;
-    font-weight: 700;
+
+/*--------------------------------------------------------------
+# Header
+--------------------------------------------------------------*/
+.logo{
+    height: auto;
+    width: 150px;
 }
+
+.navbar-toggler{
+    box-shadow: none !important;
+}
+
 
 .fondo {
-    background-color: #E83E8C;
+    background-color: #ffa56c;
 }
 
-header ul li a {
+/*--------------------------------------------------------------
+# Cards
+--------------------------------------------------------------*/
+
+.tarjetas {
+    max-height: 170px;
+    align-items: center;
+    background-color: #ea4c35;
+}
+
+.card{
+    width: 21rem;
+    height: auto;
+}
+.boton-card{
+    background-color: #ffa56c !important;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 10px;
+    box-shadow: none !important;
+}
+
+.boton-card:hover{
+    background-color: #ea4c35 !important;
     color: #fff;
 }
 
-.tarjetas {
-    height: 170px;
-    align-items: center;
-    background-color: #17A2B8;
+
+/*--------------------------------------------------------------
+# Titulo
+--------------------------------------------------------------*/
+
+.titulo{
+    position: relative;   
+    display: inline-block; 
 }
 
-.tarjetas_texto {
-    width: 25rem;
+.text-title{
+    position: absolute;
+    top: 30%;
+    left: 45%;
+    width: 12%;
+    color: #fff;
+    font-size: 2.5rem !important;
+}
+.text-title-gal{
+    position: absolute;
+    top: 40%;
+    left: 45%;
+    width: 12%;
+    color: #fff;
+    font-size: 2.5rem !important;
 }
 
-.iconos {
- font-size: 53px;
+/*--------------------------------------------------------------
+# Modal
+--------------------------------------------------------------*/
+
+.titulo-modal{
+    font-size: 1rem;
+}
+
+.btn-check:active+.btn-outline-success, .btn-check:checked+.btn-outline-success, .btn-outline-success.active, .btn-outline-success.dropdown-toggle.show, .btn-outline-success:active{
+    background-color: #ffa56c!important;
+    color: #fff!important;
+    border: none!important;
+    border-color:#ffffff!important;
+    box-shadow: none !important;
+}
+
+.btn-outline-success{
+    color:#24354F !important;
+    border: none!important;
+    border-color: #ffffff!important;
+}
+
+.btn-close:hover, .btn-close:active, .btn-close:focus{
+    border: none!important;
+    border-color: transparent!important;
+    box-shadow: none!important;
+}
+.modal-content{
+    border-radius: 1rem;
+}
+.form-control{
+    box-shadow: none!important;
+}
+.card-text{
+    font-size: 1.5rem !important;
+}
+
+.boton-modal{
+    background-color: #ffa56c !important;
+    font-size: 1rem;
+    color: #fff;
+    padding: 5px 10px;
+    box-shadow: none !important;
+}
+
+.boton-modal:hover{
+    background-color: #ea4c35 !important;
+    color: #fff;
+}
+.btn-outline-success{
+    background-color: #fff !important;
+    color: #000;
+}
+
+.form-control{
+    border-color: rgba(255, 165, 108, 0.3) !important;
+}
+.modal-content{
+    border-radius: 1rem;
 }
 
 
-footer {
-    background-color:#E83E8C;
+/*--------------------------------------------------------------
+# Footer
+--------------------------------------------------------------*/
+.footer {
+    background-color:#ffa56c;
+}
+.ft-link{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+    line-height: 1.2;
 }
 
-@media screen (max-width:1024px) {
-    h1{
-        font: size 40px;
+.ft-link:hover{
+    color: #24354F;
+}
+
+.ft-link-nn{
+    color: #fff;
+    text-decoration: none;
+    font-size: 1rem;
+}
+
+.fa-brands, .fab{
+    color: #fff;
+}
+
+.footer-bottom{
+    background-color: #fab082;
+}
+.logo-footer{
+    max-width: 250px;
+    height: auto;
+}
+
+/*--------------------------------------------------------------
+# Responsive
+--------------------------------------------------------------*/
+
+@media only screen and (min-width: 1680px){
+    .text-title{
+        top: 28%;
+        left: 42%;
+        width: 15%;
+        font-size: 2.5rem !important;
+    }
+
+    .text-title-gal{
+        top: 28%;
+        left: 42%;
+        width: 12%;
+        font-size: 2.5rem !important;
+    }
+    .text {
+        font-size: 1rem;
+    }
+
+}
+
+
+@media only screen and (min-width: 1280px) and (max-width: 1679px){
+    .text-title{
+        top: 28%;
+        left: 45%;
+        width: 15%;
+        font-size: 2.5rem !important;
+    }
+    .text-title-gal{
+        top: 20%;
+        left: 43%;
+        width: 12%;
+        font-size: 2rem !important;
+    }
+    .logo-footer{
+        max-height: 84px;
+        max-width: 250px;
+        padding:auto;
+    }
+    .text{
+        font-size: 1rem;
+        padding-left: 1px;
+    }
+    .text-btn{
+        font-size: 1rem;
+    } 
+
+}
+
+@media only screen and (min-width: 1024px) and (max-width: 1279px) {
+    .text-title{
+        top: 25%;
+        left: 38%;
+        width: 25%;
+        font-size: 2rem !important;
+    }
+    .text-title-gal{
+        top: 20%;
+        left: 43%;
+        width: 12%;
+        font-size: 2rem !important;
+    }
+    .text{
+        font-size: 12px;
+        padding-left: 1px;
+    }    
+    .text-btn{
+        font-size: 1rem;
+    }
+    .logo-footer{
+        max-height: 84px;
+        max-width: 250px;
+        padding:auto;
+    }
+}
+
+@media (min-width: 992px){
+    .navbar-expand-lg .navbar-nav .nav-link {
+        padding-right: 0.8rem ;
+        padding-left: 0.8rem ;
+    }
+}   
+
+@media only screen and (min-width: 768px) and (max-width: 1023px) {
+    .text-title{
+        top: 18%;
+        left: 38%;
+        width: 25%;
+        font-size: 2rem !important;
+    }
+    .text-title-gal{
+        top: 20%;
+        left: 42%;
+        width: 12%;
+        font-size: 2rem !important;
+    }
+    .top_bar{
+        padding: 0.25rem;
+    }
+    .logo {
+        max-height: auto;
+        max-width: 400px !important;
+    }
+
+    .text-btn{
+        font-size: 0.8rem;
+    }
+    .logo-footer{
+        max-height: 84px;
+        max-width: 250px;
+        padding:auto;
+    }
+    .texto-footer{
+        font-size :12px;
+    }
+}
+
+@media only screen and (min-width: 376px) and (max-width: 767px) {  
+    .text-title{
+        top: 10%;
+        left: 25%;
+        width: 50%;
+        font-size: 2rem !important;
+    }
+    .text-title-gal{
+        top: 20%;
+        left: 42%;
+        width: 12%;
+        font-size: 2rem !important;
+    }
+
+    .text{
+        font-size: 0.66rem !important;
+        padding-left: 0 !important;
+     }   
+    .top_bar{
+        padding: 0.125rem;
+    }
+    .logo {
+        max-height: auto;
+        max-width: 200px;    
+      }
+
+
+    .text-btn{
+        font-size: 0.5rem!important;
+    }
+
+    .card-title{
+        font-size: 1.5rem;
+    }
+    .btn-servicio{
+        width: 120px;
+        height: auto;
+        font-size: 0.7rem; 
+    }
+    .logo-footer{
+        max-height: 84px;
+        max-width: 250px;
+        padding:auto;
+    }
+    .texto-footer{
+        font-size :10px;
+    }
+    .modal {
+        top: 5%;
+        left:5%;
+    }
+    .modal-title {
+        font-size: 1.5rem;
+    }
+    .form-control{
+        font-size:1rem;
+    }
+    .modal-dialog{
+        width:20rem;
+    }
+    .modal-body{
+        padding:0.5rem;
+    }
+    .btn-outline-success{
+        font-size: 0.8rem;
+    }
+    #footer {
+        background-color: #ffa56c;
+        padding-top: 25px!important;
+        padding-bottom: 25px;
+    }
+}
+
+@media only screen and (max-width: 375px) {
+    .text-title{
+        top: 5%;
+        left: 25%;
+        width: 50%;
+        font-size: 2rem !important;
+    }
+    .logo {
+        max-height: auto;
+        max-width: 120px;
+    }
+    .text-title-gal{
+        top: 15%;
+        left: 40%;
+        width: 12%;
+        font-size: 2rem !important;
+    }
+    
+    .text{
+       font-size: 0.65rem !important;
+       padding-left: 0 !important;
+    }
+    .text-btn{
+        font-size: 0.45rem!important;
+    }
+    .texto-footer{
+        font-size :8px;
+    }
+    .titulo{
+        font-size:1.6rem;
+    }
+    .texto-normal{
+        font-size:0.9rem;
+    }
+    .card-title{
+        font-size: 2rem;
+    }
+
+    .btn-servicio {
+        width: 120px;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.6rem;
+    }
+    .logo-footer{
+        max-height: 67px;
+        max-width: 200px;
+        padding:auto;
+    }
+    .modal {
+        left:8%;
+    }
+    .modal-title {
+        font-size: 1.2rem;
+    }
+    .modal-dialog{
+        width:18rem;
+    }
+    .modal-body{
+        padding:0.5rem;
+    }
+    .form-control{
+        font-size:0.8rem;
+    }
+    .btn-outline-success{
+        font-size: 0.66rem;
+    }
+    .boton-modal{
+        font-size: 0.66rem;
+    }
+    #footer {
+        background-color: #ffa56c;
+        padding-top: 25px!important;
+        padding-bottom: 25px;
+    }
+    .ft-link{
+        font-size: 0.8rem;
+    }
+    .ft-link-nn{
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 280px) {
+    .logo {
+        max-height: auto;
+        max-width: 120px;
+    }
+    .text{
+       font-size: 0.45rem !important;
+       padding-left: 0 !important;
+    }
+    .navbar-nav a.nav-link{
+        font-size: 0.7rem;
+    }
+    .dropdown-item {
+        font-size: 0.7rem;
+        line-height: 1.5rem;
+    }
+    .texto-footer{
+        font-size :8px;
+    }
+    .titulo{
+        font-size:1.6rem;
+    }
+    .texto-normal{
+        font-size:0.9rem;
+    }
+    .card-title{
+        font-size: 0.9rem;
+    }
+    .btn-servicio {
+        width: 120px;
+        height: auto;
+        text-align: center;
+        justify-content: center;
+        font-size: 0.6rem;
+    }
+    .logo-footer{
+        max-height: 67px;
+        max-width: 200px;
+        padding:auto;
+    }
+
+    .modal {
+        left:4%;
+    }
+    .modal-dialog{
+        width:15rem;
+    }
+    .modal-body{
+        padding:0.5rem;
     }
 }
